@@ -1,0 +1,14 @@
+---
+- name: Setup and build
+  hosts: sb
+  become: yes
+
+  roles:
+    - sb
+
+- name: copppy and run
+  hosts: pr
+  become: yes
+
+  roles:
+    - pr
