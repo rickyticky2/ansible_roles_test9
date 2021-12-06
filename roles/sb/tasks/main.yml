@@ -10,8 +10,8 @@
 
 - name: Example clone of a single branch
   ansible.builtin.git:
-    repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello
-    dest: /home/ubuntu/boxfuse-sample-java-war-hello
+    repo: {{ path_to_git_repo }}
+    dest: {{ path_to_boxfuse }}
 
 - name: maven package
   shell:
