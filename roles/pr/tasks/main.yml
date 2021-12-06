@@ -49,7 +49,8 @@
        src: tomcat.service
        dest: /etc/systemd/system/
        mode: 0755
-    name: Start and enable Tomcat service
+    notify:
+      - Start and enable Tomcat service
       
   - name: coppy files sb -> pr
     synchronize:
