@@ -3,7 +3,7 @@ ansible_user=ubuntu
 
 [sb]
    
-1sb      ansible_host=35.194.31.8
+1sb      ansible_host=
 [pr]
 
 1pr     ansible_host=35.197.235.15
