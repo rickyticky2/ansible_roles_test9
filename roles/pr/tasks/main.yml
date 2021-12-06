@@ -51,12 +51,12 @@
        mode: 0755
     name: Start and enable Tomcat service
       
-  - name: coppy files sb -> pr
-    gather_facts: False
-    hosts: pr
-     
-    - synchronize:
-        set_remote_user: no
-        src: /home/ubuntu/boxfuse-sample-java-war-hello/target/
-        dest: /opt/tomcat/webapps   
-      delegate_to: 35.223.202.29
+  #- name: coppy files sb -> pr
+  #  gather_facts: False
+  #  hosts: pr
+  #   
+  #  - synchronize:
+  #      set_remote_user: no
+  #      src: /home/ubuntu/boxfuse-sample-java-war-hello/target/
+  #      dest: /opt/tomcat/webapps   
+  #    delegate_to: 35.223.202.29
