@@ -1,13 +1,12 @@
 ---
 # tasks file for sb
 - name: install soft from apt
-  apt: name={{item}} state=installed
+  apt: name={{item}} state=latest
   with_items:
       - mc
       - openjdk-8-jdk
       - maven
-      - git
-  state: latest    
+      - git  
 
 - name: Example clone of a single branch
   ansible.builtin.git:
