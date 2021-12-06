@@ -9,10 +9,8 @@
       - git  
 
 - name: Example clone of a single branch
-  ansible.builtin.git:
-    repo: {{ path_to_git_repo }}
-    dest: {{ path_to_boxfuse }}
-
+  git: repo={{ path_to_git_repo }} dest={{ path_to_boxfuse }}
+    
 - name: maven package
   shell:
     cmd: mvn package  
