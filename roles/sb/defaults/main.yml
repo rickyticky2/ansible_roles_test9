@@ -1,0 +1,4 @@
+---
+# defaults file for sb
+path_to_boxfuse: /home/ubuntu/boxfuse-sample-java-war-hello
+path_to_git_repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git

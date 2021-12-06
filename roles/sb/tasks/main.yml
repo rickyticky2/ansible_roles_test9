@@ -1,0 +1,19 @@
+---
+# tasks file for sb
+- name: install soft from apt
+  apt: name={{item}} state=installed
+  with_items:
+      - mc
+      - openjdk-8-jdk
+      - maven
+      - git
+
+- name: Clone of a single branch boxfuse
+   ansible.builtin.git:
+     repo: {{ path_to_git_repo }}
+     dest: {{ path_to_boxfuse }}
+
+- name: maven package
+    shell:
+      cmd: mvn package  
+      chdir: "{{ path_to_boxfuse }}"     
